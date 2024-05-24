@@ -23,7 +23,7 @@ if not vc.isOpened():
 while True: #since video display frame by frame, use a while loop to traverse each frame
     isTrue, frame = vc.read() #after each read, it returns a boolean isTrue, and 
                                         #the frame it captures, and put it in frame variable
-    cv.imshow('videoWindow', frame) # then display these frames, use the same method as read images
+    cv.imshow('videoWindow', frame) # display video uses "imshow" method, unlike imread which is to read img file
     """
     1) If a key is pressed within the delay period, cv.waitKey returns the ASCII value of the 
     key. If no key is pressed, it returns -1.
